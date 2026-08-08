@@ -1,0 +1,148 @@
+/* GLOBAL */
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+/* HEADER CSS */
+header {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header .navbar-brand svg {
+  font-size: 2.8125rem;
+  color: #35a22c;
+}
+
+header .navbar-brand span {
+  color: white;
+  font-size: 2.25rem;
+}
+
+header .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+header .navbar-collapse .navbar-nav .nav-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #35a22c;
+  transition: all 0.5s;
+}
+
+header .navbar-collapse .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+header .navbar-collapse .navbar-nav .nav-item.active .nav-link {
+  color: #35a22c;
+}
+
+header .navbar-collapse .navbar-nav .nav-item.active::after {
+  width: 100%;
+}
+
+header .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+  transition: all 0.5s;
+}
+
+header .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
+  color: #35a22c;
+}
+
+/* CAROUSEL CSS */
+.carousel__text {
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background: rgba(39, 43, 54, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cyber-carousel .carousel__text {
+  color: white;
+}
+
+.cyber-carousel .carousel__text img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.cyber-carousel .carousel__text h2 {
+  font-size: 56px;
+  line-height: 65px;
+}
+
+.cyber-carousel .carousel__text p {
+  font-size: 24px;
+}
+
+.cyber-carousel .carousel-indicators {
+  bottom: 10%;
+}
+
+.cyber-carousel .carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  transition: all 0.5s;
+}
+
+.cyber-carousel .carousel-indicators .active {
+  background-color: #35a22c;
+}
+
+.cyber-carousel .carousel-indicators [data-bs-target]:hover {
+  background-color: #35a22c;
+}
+
+/* PROJECT CSS */
+.project .project__tilte {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project .project__tilte h2 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #1a1d2d;
+  font-weight: 600;
+}
+
+.project .project__tilte p {
+  color: #585858;
+  line-height: 24px;
+}
+
+.project .project__content .nav-item .active {
+  background-color: #35a22c;
+  border-color: #35a22c !important;
+  color: white !important;
+}
