@@ -65,6 +65,11 @@ header .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
 }
 
 /* CAROUSEL CSS */
+.cyber-carousel .carousel-item > img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .carousel__text {
   position: absolute;
   /* top: 0;
@@ -85,6 +90,7 @@ header .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
 }
 
 .cyber-carousel .carousel__text {
+  text-align: center;
   color: white;
 }
 
@@ -145,4 +151,30 @@ header .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
   background-color: #35a22c;
   border-color: #35a22c !important;
   color: white !important;
+}
+
+.project .project__content .project__item {
+  cursor: pointer;
+}
+
+.project .project__content .project__item .project__text h3 {
+  transition: all 0.5s;
+}
+
+.project .project__content .project__item:hover .project__text h3 {
+  color: #35a22c;
+}
+
+.project .project__content .project__item .project__text {
+  border: 1px solid transparent;
+  border-top: none;
+  transition: all 0.5s;
+}
+
+.project .project__content .project__item:hover .project__text {
+  border-color: #35a22c;
+}
+
+.project .project__content .project__item .project__text p {
+  color: #585858;
 }
